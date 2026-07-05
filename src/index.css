@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-surface: #0a0a0f;
+  --color-surface-elevated: #12121a;
+  --color-surface-card: #16161f;
+  --color-border: #1e1e2e;
+  --color-border-hover: #2a2a3d;
+  --color-accent: #10b981;
+  --color-accent-light: #34d399;
+  --color-accent-glow: #059669;
+  --color-muted: #71717a;
+  --color-text: #fafafa;
+  --color-text-secondary: #a1a1aa;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface text-text antialiased;
+    font-family: var(--font-sans);
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-text;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-surface;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border-hover rounded-full;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-surface-card/60 backdrop-blur-xl border border-border;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent-light via-accent to-emerald-400 bg-clip-text text-transparent;
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(16, 185, 129, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(16, 185, 129, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 40px rgba(16, 185, 129, 0.15);
+  }
+}
