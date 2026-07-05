@@ -63,7 +63,7 @@ export default function Hero() {
             View My Work
           </a>
           <a
-            href={`${import.meta.env.BASE_URL}resume.pdf`}
+            href={`https://github.com/RoshanKanase/roshan-kanase-portfolio/blob/master/public/resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg glass px-6 py-3 text-sm font-medium text-text transition-all hover:border-border-hover"
