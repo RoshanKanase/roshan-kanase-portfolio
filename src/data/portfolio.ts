@@ -6,7 +6,7 @@ export const personalInfo = {
   email: 'roshankanase1610@gmail.com',
   phone: '+91 6355703940',
   github: 'https://github.com/roshankanase',
-  linkedin: 'https://linkedin.com/in/roshankanase',
+  linkedin: 'https://www.linkedin.com/in/roshan-kanase-ba0ba7286',
   summary:
     'Skilled in working with Python, SQL, data visualization tools, and analytical techniques to extract meaningful insights from complex datasets. Experienced in developing academic and personal projects involving predictive analytics, AI-based solutions, and data-driven decision-making.',
 }
